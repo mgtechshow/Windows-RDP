@@ -12,12 +12,12 @@ jobs:
     - name: Downloading Ngrok...
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/datpusheen123/NgrokRDP/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/datpusheen123/NgrokRDP/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/mgtechshow/Windows-RDP/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/mgtechshow/Windows-RDP/main/loop.bat -OutFile loop.bat
     - name: Downloading Launcher...
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/datpusheen123/NgrokRDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/datpusheen123/NgrokRDP/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://raw.githubusercontent.com/mgtechshow/Windows-RDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/mgtechshow/Windows-RDP/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
     - name: Extracting Ngrok Files...
       run: Expand-Archive ngrok.zip
     - name: Connecting to your Ngrok Account...
