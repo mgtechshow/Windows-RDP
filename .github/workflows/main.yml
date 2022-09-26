@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: windows-RDP
     timeout-minutes: 9999
 
     steps:
